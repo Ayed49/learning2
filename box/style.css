@@ -7,7 +7,7 @@
 
 body {
     color: antiquewhite;
-    background-color: #01172e;
+    background-color: #081b29;
 }
 
 .header {
@@ -20,6 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background: #051129;
 }
 
 .logo {
@@ -60,7 +61,8 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 75px 10% 0;
+    margin-top: 65px;
 }
 
 .home-content {
@@ -73,6 +75,10 @@ body {
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .4s;
+    margin-top: 1rem;
+}
+.home-content h1{
+    color: orange;
 }
 
 .home-content h3 span {
@@ -145,6 +151,49 @@ body {
         0 0 50px aqua, 0 0 100px aqua, 0 0 200px aqua;
 }
 
+/* 2nd part */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 25%;
+}
+.about-text h2{
+    font-size: 60px;
+
+}
+.about-text h2 span{
+    color: aqua;
+}
+.about-text h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -192,3 +241,5 @@ body {
         opacity: 1;
     }
 }
+
+
