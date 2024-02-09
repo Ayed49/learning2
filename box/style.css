@@ -56,7 +56,7 @@ body {
     width: 100%;
     height: 100vh;
     justify-content: space-between;
-    background: url(img/bg1.png) no-repeat;
+    background: url(img/ayed1.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -77,7 +77,8 @@ body {
     animation-delay: .4s;
     margin-top: 1rem;
 }
-.home-content h1{
+
+.home-content h1 {
     color: orange;
 }
 
@@ -152,13 +153,14 @@ body {
 }
 
 /* 2nd part */
-.about{
+.about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
-.about-img img{
+
+.about-img img {
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
@@ -166,77 +168,91 @@ body {
     border-radius: 8px;
     margin-top: 25%;
 }
-.about-text h2{
+
+.about-text h2 {
     font-size: 60px;
 
 }
-.about-text h2 span{
+
+.about-text h2 span {
     color: aqua;
 }
-.about-text h4{
+
+.about-text h4 {
     font-size: 28px;
     font-weight: 600;
     color: white;
     line-height: 1.7;
     margin: 15px 0 30px;
 }
-.about-text p{
+
+.about-text p {
     color: white;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+
 /* 3rd part */
-#services{
+#services {
     color: white;
     font-size: 20px;
     line-height: 1.4rem;
     margin-bottom: 4rem;
 }
-.sub-title{
+
+.sub-title {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
 }
-.sub-title span{
+
+.sub-title span {
     color: aqua;
 }
-.container{
+
+.container {
     padding: 90px;
 }
-.services-list{
+
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+
+.services-list div {
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.8s;
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
     color: #000000;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.read{
+
+.read {
     display: inline-block;
     background: aqua;
     border-radius: 40px;
@@ -251,13 +267,98 @@ body {
     animation-delay: 2s;
     box-shadow: 0 0 5px aqua, 0 0 25px aqua;
 }
-.read:hover{
+
+.read:hover {
     box-shadow: 0 0 5px aqua, 0 0 25px aqua,
-    0 0 50px aqua, 0 0 100px aqua, 0 0 200px aqua;
+        0 0 50px aqua, 0 0 100px aqua, 0 0 200px aqua;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     transform: translateY(-12px);
 }
+
+/* 4th part */
+section {
+    display: flex;
+}
+
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 1opx;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.technical-bars .bar {
+    margin: 40px 0;
+}
+
+.technical-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.technical-bars .bar:last-child {
+    margin-bottom: 0px;
+}
+
+.technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+}
+
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 35px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+    transform: scaleX(1.2);
+    transform-origin: left;
+    
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+    transform: scaleX(5);
+    transform-origin: right;
+}
+.progress-line .html span{
+    width: 90%;
+}
+
+
 
 
 
@@ -313,5 +414,7 @@ body {
         opacity: 1;
     }
 }
+
+
 
 
