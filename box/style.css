@@ -320,7 +320,7 @@ section {
         effect of the progress bar*/
 
 .progress-bar {
-    width: 500px;
+    width: 400px;
     height: 5px;
     margin-top: 10px;
     border: 1px solid #000000;
@@ -332,7 +332,7 @@ section {
 
 .percentage {
     display: block;
-    height: 6px;
+    height: 5px;
     background-color: aqua;
     border-radius: 20px;
     animation: progress 1s linear forwards;
@@ -413,6 +413,7 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: space-evenly;
     align-items: flex-start;
 }
@@ -422,6 +423,7 @@ section {
     height: 170px;
     margin-bottom: 10px;
     position: relative;
+    margin-top: 25px;
 }
 
 .radial-bars .radial-bar svg {
@@ -502,17 +504,34 @@ section {
         ;
     }
 }
-
-.radial-bar .percentage {
+/* circle parcentage */
+.parcentage{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText o.5s 1s linear forwards;
-    opacity: 0;
+   top: 45%;
+   bottom: 55%;
+   right: 43%;
+   font-weight: 500;
+   animation: showText1 0.5s 1s linear forwards;
+  opacity: 0;
+   
 }
+@keyframes showText1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* circle text and cheack inline css */
+.text{
+    position: absolute;
+    top: 90%;
+   right: 30%;
+   font-weight: 500;
+}
+
 
 
 @keyframes slideRight {
@@ -534,7 +553,7 @@ section {
     }
 
     100% {
-        transform: translatey(0px);
+        transform: transatey(0px);
         opacity: 1;
     }
 }
