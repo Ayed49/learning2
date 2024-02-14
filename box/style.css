@@ -583,6 +583,9 @@ section {
 }
 
 /* poftfolio section */
+.portfolio{
+    margin: 20px 10%;
+}
 .main-text{
     margin-top: 200px;
     padding-top: 130px;
@@ -593,9 +596,13 @@ section {
     text-align: center;
     color: aqua;
 }
+.main-text h2 span{
+    color: aqua;
+}
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    margin-top: 60px;
 }
 .row{
     position: relative;
@@ -630,5 +637,29 @@ section {
     color: #000;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+.layer p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 0.9;
+   
+}
+.layer i{
+    color: rgb(255, 0, 13);
+    margin-top: 20px;
+    font-size: 20px;
+    background: aqua;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1,1);
+}
+.row:hover .layer{
+    height: 100%;
 }
