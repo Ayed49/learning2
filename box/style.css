@@ -158,15 +158,21 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    margin-right: 7%;
+    
+
 }
 
 .about-img img {
+
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
     width: 100%;
     border-radius: 8px;
     margin-top: 25%;
+    margin-left: 10%;
+
 }
 
 .about-text h2 {
@@ -413,7 +419,7 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
+
     justify-content: space-evenly;
     align-items: flex-start;
 }
@@ -442,7 +448,7 @@ section {
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
+    animation: animate-bar 0.5s linear forwards;
 
 }
 
@@ -462,19 +468,19 @@ section {
 }
 
 .path-1 {
-    animation: animate-path1 1s 1s linear forwards
+    animation: animate-path1 1s 0.3s linear forwards
 }
 
 .path-2 {
-    animation: animate-path2 1s 1s linear forwards
+    animation: animate-path2 1s 0.3s linear forwards
 }
 
 .path-3 {
-    animation: animate-path3 1s 1s linear forwards
+    animation: animate-path3 1s 0.3s linear forwards
 }
 
 .path-4 {
-    animation: animate-path4 1s 1s linear forwards
+    animation: animate-path4 1s 0.3s linear forwards
 }
 
 @keyframes animate-path1 {
@@ -504,32 +510,35 @@ section {
         ;
     }
 }
+
 /* circle parcentage */
-.parcentage{
+.parcentage {
     position: absolute;
-   top: 45%;
-   bottom: 55%;
-   right: 43%;
-   font-weight: 500;
-   animation: showText1 0.5s 1s linear forwards;
-  opacity: 0;
-   
+    top: 45%;
+    bottom: 55%;
+    right: 43%;
+    font-weight: 500;
+    animation: showText1 0.5s 1s linear forwards;
+    opacity: 0;
+
 }
-@keyframes showText1{
-    0%{
+
+@keyframes showText1 {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
 /* circle text and cheack inline css */
-.text{
+.text {
     position: absolute;
     top: 90%;
-   right: 30%;
-   font-weight: 500;
+    right: 30%;
+    font-weight: 500;
 }
 
 
@@ -583,43 +592,50 @@ section {
 }
 
 /* poftfolio section */
-.portfolio{
+.portfolio {
     margin: 20px 10%;
 }
-.main-text{
+
+.main-text {
     margin-top: 200px;
     padding-top: 130px;
 }
-.main-text h2{
+
+.main-text h2 {
     font-size: 60px;
     line-height: 2;
     text-align: center;
     color: aqua;
 }
-.main-text h2 span{
+
+.main-text h2 span {
     color: aqua;
 }
-.portfolio-content{
+
+.portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(359px, auto));
     margin-top: 60px;
 }
-.row{
+
+.row {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
 }
-.row img{
+
+.row img {
     width: 100%;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0,1),aqua);
+    background: linear-gradient(rgba(0, 0, 0, 0, 1), aqua);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -633,19 +649,22 @@ section {
     padding: 0 40px;
     transition: height 0.5s;
 }
-.layer h5{
+
+.layer h5 {
     color: #000;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.layer p{
+
+.layer p {
     color: #000;
     font-size: 1rem;
     line-height: 0.9;
-   
+
 }
-.layer i{
+
+.layer i {
     color: rgb(255, 0, 13);
     margin-top: 20px;
     font-size: 20px;
@@ -657,9 +676,152 @@ section {
     justify-content: center;
     border-radius: 50%;
 }
-.row:hover img{
-    transform: scale(1,1);
+
+.row:hover img {
+    transform: scale(1, 1);
 }
-.row:hover .layer{
+
+.row:hover .layer {
     height: 100%;
 }
+
+/* contact me section */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    margin-left: 10%;
+    margin-top: 130px;
+    margin-right: 6%;
+}
+
+.me{
+    font-size: 70px;
+    color: aqua;
+    line-height: 1;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+   
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: rgb(228,228,228);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.contact-text p{
+    color: rgb(177,177,177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+
+}
+.contact-list{
+    margin-bottom: 4rem;
+
+}
+.contact-list li{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+    margin-top: 10px;
+}
+.contact-list li a:hover{
+    transform: scale(1.01s) translateY(-5px);
+    color: aqua;
+}
+.contact-icon i{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid aqua;
+border-radius: 50%;
+font-size: 20px;
+color: aqua;
+text-decoration: none;
+margin: 30px 15px 30px 0;
+transition: 0.5s ease;
+opacity: 0;
+animation: slideLeft 1s ease forwards;
+animation-delay: calc(.2s * var(--i));
+}
+.contact-icon i:hover{
+    background: aqua;
+    color: #000;
+    box-shadow: 0 0 20px aqua;
+}
+
+.contact-form form{
+    position: relative;
+
+}
+.contact-form form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    background: aqua;
+    border-radius: 40px;
+    padding: 14px 60px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.5s;
+    box-shadow: 0 0 5px aqua, 0 0 25px aqua; 
+}
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px aqua, 0 0 25px aqua,
+        0 0 50px aqua, 0 0 100px aqua, 0 0 200px aqua;
+}
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7,85,91);
+    font-weight: 300;
+    margin-top: 70px;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i{
+    color: #000;
+    background: aqua;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+
+}
+
